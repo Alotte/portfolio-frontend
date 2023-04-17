@@ -105,6 +105,9 @@
     .gpt3__navbar-menu {
         display: flex;
     }
+    .gpt3__navbar-menu_container-links p {
+        margin-bottom: 0.5rem;
+    }
 }
 
 /*Tablet*/
@@ -124,5 +127,12 @@
     }
     .gpt3__navbar-menu_container-links-sign {
         display: block;
+    }
+
+    .gpt3__navbar-menu_container-links-sign p{
+        margin-bottom: 0.4rem;
+    }
+    .gpt3__navbar-menu_container-links  {
+        margin-bottom: 0.5rem;
     }
 }
