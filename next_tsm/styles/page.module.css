@@ -1,0 +1,16 @@
+.page {
+    flex: 1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    padding: 2rem 2rem;
+}
+
+
+/*Half-screen*/
+@media screen and (max-width: 780px) {
+    .page {
+        margin: 1rem 1rem;
+    
+    }
+}
