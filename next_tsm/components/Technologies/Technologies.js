@@ -8,18 +8,17 @@ const Technologies = () =>  (
   <Section id="tech">
     <SectionDivider />
     <br/>
-    <SectionTitle> Technologies</SectionTitle>
+    <SectionTitle> technology I'm experienced with </SectionTitle>
     <SectionText> 
-      I've worked with a range of technologies within web development. From design to functional website. 
-    </SectionText>
+      Let's see if we're a fit!
+      </SectionText>
     <List>
       <ListItem>
          <DiReact size="3rem" />
          <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            React.js, Next.js, Jotai, both Javascript & Typescript          
+            React.js<br /> Next.js <br />Javascript <br />Typescript <br />Jotai      
             </ListParagraph>
          </ListContainer>
       </ListItem>
@@ -29,8 +28,9 @@ const Technologies = () =>  (
          <ListContainer>
           <ListTitle>UI & UX</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Figma for UI design & Prototyping
+            Figma <br />
+            Adobe Illustrator <br />
+            Canva
           </ListParagraph>
          </ListContainer>
       </ListItem>
@@ -40,8 +40,7 @@ const Technologies = () =>  (
          <ListContainer>
           <ListTitle>Back-end</ListTitle>
           <ListParagraph>
-            Experience  <br />
-            interacting with existent REST-ful Databases
+            Interacting with existent REST-ful Databases
           </ListParagraph>
          </ListContainer>
       </ListItem>
@@ -51,8 +50,8 @@ const Technologies = () =>  (
          <ListContainer>
           <ListTitle>Brand & Asset Design</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Adobe Illustrator for typography- and logo design. Professional 2D Art assets with Adobe Photoshop</ListParagraph>
+            Adobe Illustrator | Typography and logo design. <br />
+            Adobe Photoshop  | 2D Art assets</ListParagraph>
          </ListContainer>
       </ListItem>
 

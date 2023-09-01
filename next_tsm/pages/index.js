@@ -6,23 +6,26 @@ import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
-import { Section } from '../styles/GlobalComponents';
+import { Section,HeroSection, HeroImage } from '../styles/GlobalComponents';
+import Header from '../components/Header/Header';
 
 const Home = () => {
   return (
-    <Layout>
+  <>
       <Head>
-        <title>Portfolio Alma Ottedag</title>
+        <title>Alma Ottedag | Home</title>
       </Head>
+      <Header/>
       <Section grid> 
       <Hero />
+      {/*<HeroImage src="heroImage.jpg"/>*/}
       <BgAnimation />
       </Section> 
       <Projects />
       <Technologies />
       <Timeline />
       <Acomplishments />
-    </Layout>
+      </>
   );
 };
 

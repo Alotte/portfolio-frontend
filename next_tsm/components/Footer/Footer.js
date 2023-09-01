@@ -22,7 +22,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Let's thrive togeher</Slogan>
+          <Slogan>Pioneering growth </Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/Alotte/">

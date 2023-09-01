@@ -1,20 +1,39 @@
 export const projects = [
   {
-    title: 'Life Butler',
-    description: "In development. A SaaS webapp designed to help users take control of their lifestyle based on 8 years of experiece and studies of how to improve your lifestyle with chronic illness. Currently, a minimum-viable product is being developed for user testing here in Sweden. ",
+    title: 'Wellness Labs',
+    description: "In development. SaaS platform designed to help users take control of their lifestyle using metacognition.  ",
       image: '1.png',
       tags: ['Typescript', 'React', 'Remix', 'Figma','Photoshop'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    source: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
+    visit: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
+    id: 0,
+  },
+  
+  {
+    title: 'U-Care Questionnaires',
+    description: "A small project helping U-CARE to implement an example of their state-funded research project.",
+      image: '4.png',
+      tags: ['Typescript', 'React', 'Next.js', 'Jotai', 'Figma'],
+    source: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
+    visit: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
+    id: 0,
+  },
+  {
+    title: 'GPT-3 Landing Page',
+    description: "A simple, yet responsive landing page with all that it should offer. Sleek on mobile and desktop.",
+      image: '2.png',
+      tags: ['Javascript', 'React', 'Figma'],
+    source: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
+    visit: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
     id: 0,
   },
   {
     title: 'Real-time Web Path Tracer ',
-    description: "Showcasing the capabilities of real-time realistic rendering of 3D objects directly in the browser. Master Degree project collaboration with RapidImages AB at Chalmers University of Technology. ",
-      image: '2.png',
-      tags: ['WebGL'],
+    description: "Physical rendering of 3D objects in the browser. Master Degree project collaboration with RapidImages AB.",
+      image: '3.png',
+      tags: ['WebGL', 'Javascript'],
     source: 'https://publications.lib.chalmers.se/records/fulltext/255145/255145.pdf',
-    visit: 'https://google.com',
+    visit: 'https://publications.lib.chalmers.se/records/fulltext/255145/255145.pdf',
     id: 1,
   }
   ];
@@ -36,14 +55,13 @@ export const heroSection =
 
 
 export const TimeLineData = [
-  { year: 2022, text: 'Started development of LifeButler, the SaaS web product', },
-  { year: 2021, text: 'Started my own company within Design as work training', },
-  { year: 2019, text: 'Resigned and began creating my own healthy lifestyle', },
-  { year: 2018, text: 'Started working as an IT consultant at Consid AB)', },
-  { year: 2018, text: 'Finished my 5-year IT education with WAM: 4.5/5)', },
-  { year: 2017, text: 'Worked as a Web Developer consultant intern at Consid)', },
+  { year: 2022, text: 'Developing the Wellness Labs platform', },
+  { year: 2021, text: 'Started my company', },
+  { year: 2019, text: 'Resigned to recover & heal', },
+  { year: 2018, text: 'Graduated! Started as IT Consultant at Consid AB', },
+  { year: 2017, text: 'Intern at Consid - Web Developer ', },
   { year: 2016, text: 'Won Hack Out West Hackathon (iOS app)', },
-  { year: 2015, text: 'Software Developer Intern at Volvo GTT (Android)', },
+  { year: 2015, text: 'Intern at Volvo GTT - Android', },
   { year: 2014, text: 'Won Volvo SICS Innovation Challenge (Android)', },
-  { year: 2013, text: 'Started my 5-year IT degree', },
+  { year: 2013, text: 'Started Univesity', },
 ];

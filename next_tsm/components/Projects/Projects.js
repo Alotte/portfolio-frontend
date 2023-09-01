@@ -7,13 +7,13 @@ import { projects } from '../../constants/constants';
 const Projects = () => (
   <Section id="projects">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionTitle main>recent projects I've worked on </SectionTitle>
     <GridContainer>
       {projects.map(({id,image, title, description, tags, source, visit}) => (
         <BlogCard key={id}>
           <Img src={image}/>
           <TitleContent>
-            <HeaderThree title >{title}</HeaderThree>
+            <HeaderThree>{title}</HeaderThree>
             <Hr />
           </TitleContent>
           <CardInfo>{description}</CardInfo>

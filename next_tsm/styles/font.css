@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'CustomFont1Name';
+    src: local('CustomFont1Name'),
+         url('../fonts/CustomFont1Name.woff') format('woff'),
+         url('../fonts/CustomFont1Name.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'),
+         url('../fonts/Poppins.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }

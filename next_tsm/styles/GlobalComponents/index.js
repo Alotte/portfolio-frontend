@@ -1,11 +1,32 @@
 import styled from 'styled-components'
 
+
+export const HeroSection = styled.section`
+  align-items: center;
+  display: ${(props) => props.grid ? "grid" : "flex" };
+  flex-direction: ${(props) => props.row ? "row" : "column" };
+  margin: 0 auto;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    flex-direction: column;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+`
+
 export const Section = styled.section`
+  align-items: center;
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
   margin: 0 auto;
-  max-width: 1040px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
@@ -19,6 +40,42 @@ export const Section = styled.section`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
 
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+`
+export const GlobalTitle = styled.h1`
+  font-weight: 800;
+  font-size: ${(props) => props.main ? '86px' : '72px'};
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  padding: ${(props) => props.main ? '58px 0 16px' : '0'};
+  
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: ${(props) => props.main ? '68px' : '50px'};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: ${(props) => props.main ? '52px' : '46px'};
+  }
+`
+
+export const HeroImage = styled.img`
+  width: 100vw;
+
+@media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+   
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+    font-size: ${(props) => props.main ? '64px' : '52px'};
     width: calc(100vw - 32px);
     flex-direction: column;
   }
@@ -57,7 +114,7 @@ export const SectionText = styled.p`
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
 
@@ -71,12 +128,13 @@ export const SectionText = styled.p`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 16px;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 `
 
 export const SectionDivider = styled.div`
-
   width: 64px;
   height: 6px;
   border-radius: 10px;
