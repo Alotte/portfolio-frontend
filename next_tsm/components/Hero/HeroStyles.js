@@ -1,11 +1,29 @@
 import styled from 'styled-components';
 
+
+export const Introduction = styled.div `
+  display: flex;
+  margin-bottom: 4rem;
+  align-items: center;
+  gap: 2rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+
+    flex-direction: column;
+  
+  }
+
+`
+
+
+
 export const LeftSection = styled.div`
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;
     display: flex;
     flex-direction: column;
+   
 
     margin: 0 auto;
   }

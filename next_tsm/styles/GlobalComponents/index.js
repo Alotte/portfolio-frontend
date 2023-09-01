@@ -1,5 +1,217 @@
 import styled from 'styled-components'
 
+export const Screen = styled.div`
+  margin-left: 2rem;
+  z-index: -2
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 600px;
+  border-radius: 1rem;
+  background-color: rgba(50, 72,114, 15%);
+  border: 0px solid rgba(50, 72,114, 80);
+  aspect-ratio: 16/10;
+
+  
+`
+
+
+
+export const Screen2 = styled.div`
+  z-index: -2
+  position: absolute;
+  width: 100%;
+  height:100%;
+
+  
+`
+
+
+export const ScreenTitle = styled.h2`
+  align-self: flex-end;
+  
+  
+`
+
+
+
+export const ScreenGradient = styled.div`
+position: absolute;
+z-index: -1;
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 60%);
+  width:100%;
+  height: 100%;
+`
+
+
+export const ScreenImage = styled.div`
+  z-index: -1;
+  position: absolute;
+  background-image: url('./blue.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: 400%;
+  background-position: center;
+  opacity: 0.6;
+  background-repeat: no-repeat;
+
+  @keyframes pan-image {
+
+    0% {
+      background-position: 36% 42%;
+      background-size: 360%;
+    }
+
+    20% {
+      background-position: 30% 35%;
+      background-size: 360%;
+    }
+
+    20.0001%{
+      background-position: 68% 85%;
+      background-size: 600%;
+    } 
+
+    40% {
+      background-position: 49% 81%;
+      background-size: 600%;
+    }
+
+    40.0001%{
+      background-position: 80% 42%;
+      background-size: 660%;
+    } 
+
+    60% {
+      background-position: 84% 33%;
+      background-size: 660%;
+    }
+
+    60.0001%{
+      background-position: 80% 42%;
+      background-size: 300%;
+    } 
+
+    80% {
+      background-position: 15% 4%;
+      background-size: 360%;
+    }
+
+    80.0001%{
+      background-position: 80% 10%;
+      background-size: 360%;
+    } 
+
+    
+
+   
+  }
+  animation: pan-image 30s linear infinite;
+`
+
+
+export const ScreenImage2 = styled.div`
+
+  z-index: -2;
+  position: absolute;
+  background-image: url('cofee2.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: 400%;
+  background-position: center;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+
+  @keyframes pan-image {
+
+    0% {
+      background-position: 36% 42%;
+      background-size: 160%;
+    }
+
+    20% {
+      background-position: 30% 35%;
+      background-size: 160%;
+    }
+
+    20.0001%{
+      background-position: 68% 85%;
+      background-size: 200%;
+    } 
+
+    40% {
+      background-position: 49% 81%;
+      background-size: 200%;
+    }
+
+    40.0001%{
+      background-position: 80% 42%;
+      background-size: 260%;
+    } 
+
+    60% {
+      background-position: 84% 33%;
+      background-size: 260%;
+    }
+
+    60.0001%{
+      background-position: 80% 42%;
+      background-size: 160%;
+    } 
+
+    80% {
+      background-position: 15% 4%;
+      background-size: 160%;
+    }
+
+    80.0001%{
+      background-position: 80% 10%;
+      background-size: 160%;
+    } 
+
+    
+
+   
+  }
+  animation: pan-image 60s linear infinite;
+`;
+
+export const ScreenOverLay = styled.div`
+  border-radius: 1rem;
+  position: absolute;
+  z-index: -2;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  background-size: 9px 9px!important;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+
+  background: linear-gradient(
+  rgba(50, 72,114, 40%),
+  rgba(50, 72,114,40%) 3px,
+  transparent 3px,
+  transparent 9px
+  );
+
+  width: 100%;
+  height: 100%;
+
+
+  @keyframes pan-overlay {
+    from {
+      background-position 0% 0%;
+
+    }
+    to {
+      background-position: 0% -100%;
+    }
+  }
+  animation: pan-overlay 26s infinite;
+  
+`;
 
 export const HeroSection = styled.section`
   align-items: center;
@@ -19,7 +231,7 @@ export const HeroSection = styled.section`
     width: calc(100vw - 32px);
     flex-direction: column;
   }
-`
+`;
 
 export const Section = styled.section`
   align-items: center;
@@ -43,7 +255,35 @@ export const Section = styled.section`
     width: calc(100vw - 32px);
     flex-direction: column;
   }
-`
+`;
+
+export const AccentSection = styled.section`
+  background-color: #0b121f;
+  align-items: center;
+  display: ${(props) => props.grid ? "grid" : "flex" };
+  flex-direction: ${(props) => props.row ? "row" : "column" };
+  padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
+  margin: 0 auto;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+`;
+
+
+
 export const GlobalTitle = styled.h1`
   font-weight: 800;
   font-size: ${(props) => props.main ? '86px' : '72px'};
@@ -62,7 +302,7 @@ export const GlobalTitle = styled.h1`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: ${(props) => props.main ? '52px' : '46px'};
   }
-`
+`;
 
 export const HeroImage = styled.img`
   width: 100vw;
@@ -116,7 +356,7 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 400;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255);
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;

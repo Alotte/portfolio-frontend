@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Wellness Labs',
     description: "In development. SaaS platform designed to help users take control of their lifestyle using metacognition.  ",
-      image: '1.png',
+      image: '6.png',
       tags: ['Typescript', 'React', 'Remix', 'Figma','Photoshop'],
     source: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
     visit: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
@@ -21,7 +21,7 @@ export const projects = [
   {
     title: 'GPT-3 Landing Page',
     description: "A simple, yet responsive landing page with all that it should offer. Sleek on mobile and desktop.",
-      image: '2.png',
+      image: '8.png',
       tags: ['Javascript', 'React', 'Figma'],
     source: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
     visit: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
@@ -30,7 +30,7 @@ export const projects = [
   {
     title: 'Real-time Web Path Tracer ',
     description: "Physical rendering of 3D objects in the browser. Master Degree project collaboration with RapidImages AB.",
-      image: '3.png',
+      image: '7.png',
       tags: ['WebGL', 'Javascript'],
     source: 'https://publications.lib.chalmers.se/records/fulltext/255145/255145.pdf',
     visit: 'https://publications.lib.chalmers.se/records/fulltext/255145/255145.pdf',
@@ -49,8 +49,8 @@ export const projects = [
 
 export const heroSection = 
   {
-    description_intro: "Hey, there! I'm Alma Ottedag, let's get to know each other.",
-    description_detail: "I'm an award-winning Swedish engineer celebrating 2 years of cutting edge web development. How can I help you? "
+    description_intro: "Hey, there! Let's get to know each other.",
+    description_detail: "I'm Alma Ottedag, an award-winning Swedish engineer based in Knivsta. I'm celebrating 2 years of cutting edge web development. How can I help you? "
   }
 
 

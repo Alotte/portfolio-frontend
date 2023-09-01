@@ -6,7 +6,7 @@ import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
-import { Section,HeroSection, HeroImage } from '../styles/GlobalComponents';
+import { Section, Screen, HeroSection, HeroImage, ScreenOverLay, ScreenImage, ScreenTitle, ScreenGradient, ScreenImage2 } from '../styles/GlobalComponents';
 import Header from '../components/Header/Header';
 
 const Home = () => {
@@ -15,16 +15,18 @@ const Home = () => {
       <Head>
         <title>Alma Ottedag | Home</title>
       </Head>
+        <ScreenImage2/>
+        <ScreenGradient/>
       <Header/>
-      <Section grid> 
+      <Section > 
       <Hero />
       {/*<HeroImage src="heroImage.jpg"/>*/}
-      <BgAnimation />
       </Section> 
+      <Acomplishments />
+
       <Projects />
       <Technologies />
       <Timeline />
-      <Acomplishments />
       </>
   );
 };

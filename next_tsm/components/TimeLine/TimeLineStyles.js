@@ -7,7 +7,6 @@ export const CarouselContainer = styled.div`
     display: flex;
     flex-direction: row;
   max-width: 1040px;
-  background: #0F1624;
   padding: 0;
   list-style:none;
   display: flex;
@@ -53,7 +52,7 @@ export const CarouselMobileScrollNode = styled.div`
 `
 //--------------CAROUSEL ITEM--------------
 export const CarouselItem = styled.div`
-  background: #0F1624;
+
   border-radius: 3px;
   max-width: 196px;
   
@@ -69,7 +68,7 @@ export const CarouselItem = styled.div`
     margin-left: 60px;
     min-width: 170px;
 
-    background: #0E131F;
+
     padding: 4px;
     align-content: start;
     scroll-snap-align: start;

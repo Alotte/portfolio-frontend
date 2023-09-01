@@ -1,7 +1,7 @@
 import React from 'react';
 import {  DiFirebase, DiIllustrator, DiPhotoshop, DiReact, DiZend} from 'react-icons/di';
 import {FaArtstation} from 'react-icons/fa';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import {  Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (

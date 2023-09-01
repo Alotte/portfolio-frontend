@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { AccentSection, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 
 const data = [
@@ -10,7 +10,9 @@ const data = [
 ];
 
 const Acomplishments = () => (
-  <Section>
+  
+  <>
+  <AccentSection>
     <SectionTitle>accomplishments</SectionTitle>
     <Boxes>
       {data.map((card, index) => (
@@ -21,7 +23,8 @@ const Acomplishments = () => (
 
       ))}
     </Boxes>
-  </Section>
+  </AccentSection>
+  </>
 );
 
 export default Acomplishments;

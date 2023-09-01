@@ -23,11 +23,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Span = styled.span `
-  font-size: 2rem;
-  margin-left: 1rem;
 
-`;
 export const Logo = styled.img`
   background-image: url(/images/askaarts_small.png);
   width: 30px;

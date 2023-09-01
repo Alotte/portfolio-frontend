@@ -8,8 +8,8 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Home, Span, Logo } f
 const Header = () =>  (
   <Container>
     <Div1>
-      <Link href="/"  style= {{display:"flex", alignItems: "center", color: 'white', marginBottom: '20px'}}>
-         <img src= "askaartSmall.png" width="38px"/> <Span>Alma Ottedag</Span>
+      <Link href="/">
+        <NavLink>Alma Ottedag</NavLink>
       </Link>
     </Div1>
     <Div2>
