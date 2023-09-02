@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 //--------------CAROUSEL--------------
 export const CarouselContainer = styled.div`
+margin-top: 2rem;
     display: flex;
     flex-direction: row;
   max-width: 1040px;

@@ -55,7 +55,9 @@ justify-content: space-between;
 @media ${props => props.theme.breakpoints.sm}{
   display: flex;
 	width: 100%;
-  flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+  flex-direction: row;
 }
 `
 

@@ -9,8 +9,8 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
     <GlobalTitle main center>
-        frontend 
-        <br />developer & <br />designer
+        web developer 
+        <br />& designer<br />
       </GlobalTitle>
       <Introduction>
         <img src='./profile2.png' width='150'/>
@@ -18,8 +18,7 @@ const Hero = (props) => (
           {heroSection.description_intro +" " + heroSection.description_detail} 
         </SectionText>
       </Introduction>
- 
-      <Button onClick={() => window.location = 'mailto:alma.ottedag@gmail.com'}>Contact Me</Button>
+      <Button onClick={() => window.location = 'mailto:alma.ottedag@gmail.com'}>Connect</Button>
     </LeftSection>
   </Section>
 );

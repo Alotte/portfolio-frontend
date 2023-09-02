@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Wellness Labs',
-    description: "In development. SaaS platform designed to help users take control of their lifestyle using metacognition.  ",
+    description: "My SaaS platform designed to help users take control of their lifestyle using metacognition.",
       image: '6.png',
       tags: ['Typescript', 'React', 'Remix', 'Figma','Photoshop'],
     source: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
@@ -11,7 +11,7 @@ export const projects = [
   
   {
     title: 'U-Care Questionnaires',
-    description: "A small project helping U-CARE to implement an example of their state-funded research project.",
+    description: "Implementing a part of U-CAREs state-funded healthcare research project",
       image: '4.png',
       tags: ['Typescript', 'React', 'Next.js', 'Jotai', 'Figma'],
     source: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
@@ -20,7 +20,7 @@ export const projects = [
   },
   {
     title: 'GPT-3 Landing Page',
-    description: "A simple, yet responsive landing page with all that it should offer. Sleek on mobile and desktop.",
+    description: "A simple, yet responsive landing page for my portfolio.",
       image: '8.png',
       tags: ['Javascript', 'React', 'Figma'],
     source: 'https://www.linkedin.com/in/alma-ottedag-002171104/',
@@ -29,7 +29,7 @@ export const projects = [
   },
   {
     title: 'Real-time Web Path Tracer ',
-    description: "Physical rendering of 3D objects in the browser. Master Degree project collaboration with RapidImages AB.",
+    description: "Physical 3D rendering in the browser, in collaboration with RapidImages AB.",
       image: '7.png',
       tags: ['WebGL', 'Javascript'],
     source: 'https://publications.lib.chalmers.se/records/fulltext/255145/255145.pdf',
@@ -50,13 +50,13 @@ export const projects = [
 export const heroSection = 
   {
     description_intro: "Hey, there! Let's get to know each other.",
-    description_detail: "I'm Alma Ottedag, an award-winning Swedish engineer based in Knivsta. I'm celebrating 2 years of cutting edge web development. How can I help you? "
+    description_detail: "I'm Alma Ottedag, an award-winning Swedish engineer & solopreneur based in Knivsta. I'm celebrating 2 years of web development."
   }
 
 
 export const TimeLineData = [
   { year: 2022, text: 'Developing the Wellness Labs platform', },
-  { year: 2021, text: 'Started my company', },
+  { year: 2021, text: 'Started my design company', },
   { year: 2019, text: 'Resigned to recover & heal', },
   { year: 2018, text: 'Graduated! Started as IT Consultant at Consid AB', },
   { year: 2017, text: 'Intern at Consid - Web Developer ', },

@@ -38,23 +38,23 @@ export const ScreenTitle = styled.h2`
 
 
 export const ScreenGradient = styled.div`
-position: absolute;
-z-index: -1;
+  position: absolute;
+  z-index: -1;
   background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 60%);
-  width:100%;
-  height: 100%;
+  flex-shrink: 0;
+  min-height: 100%
 `
 
 
 export const ScreenImage = styled.div`
-  z-index: -1;
+  z-index: -2;
   position: absolute;
-  background-image: url('./blue.jpg');
+  background-image: url('./heroImage.jpg');
   height: 100%;
   width: 100%;
-  background-size: 400%;
+  background-size: cover;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.1;
   background-repeat: no-repeat;
 
   @keyframes pan-image {
@@ -103,12 +103,13 @@ export const ScreenImage = styled.div`
       background-position: 80% 10%;
       background-size: 360%;
     } 
-
-    
-
-   
   }
-  animation: pan-image 30s linear infinite;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    background-size: 1000%;
+  }
+
+  /*animation: pan-image 30s linear infinite;*/
 `
 
 
@@ -116,12 +117,12 @@ export const ScreenImage2 = styled.div`
 
   z-index: -2;
   position: absolute;
-  background-image: url('cofee2.jpg');
+  background-image: url('knivsta.jpg');
   height: 100%;
   width: 100%;
   background-size: 400%;
   background-position: center;
-  opacity: 0.5;
+  opacity: 0.2;
   background-repeat: no-repeat;
 
   @keyframes pan-image {
@@ -176,7 +177,13 @@ export const ScreenImage2 = styled.div`
    
   }
   animation: pan-image 60s linear infinite;
-`;
+
+  
+  @media ${(props) => props.theme.breakpoints.md} {
+    visibility: hidden;
+  }
+`
+
 
 export const ScreenOverLay = styled.div`
   border-radius: 1rem;
@@ -185,17 +192,11 @@ export const ScreenOverLay = styled.div`
   left: 0px;
   top: 0px;
   overflow: hidden;
-  background-size: 9px 9px!important;
+  background-size: 10px;
   background-position: 0% 0%;
   background-repeat: repeat;
-
-  background: linear-gradient(
-  rgba(50, 72,114, 40%),
-  rgba(50, 72,114,40%) 3px,
-  transparent 3px,
-  transparent 9px
-  );
-
+  opacity: 0.9;
+  background: #212D45;
   width: 100%;
   height: 100%;
 
@@ -235,6 +236,7 @@ export const HeroSection = styled.section`
 
 export const Section = styled.section`
   align-items: center;
+  position:relative;
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
@@ -351,12 +353,12 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
-  max-width: 800px;
-  font-size: 24px;
+  max-width: 700px;
+  font-size: 22px;
   line-height: 40px;
   font-weight: 400;
-  padding-bottom: 3.6rem;
   color: rgba(255, 255, 255);
+  margin-bottom: 4rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -472,7 +474,7 @@ export const ButtonBack = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
+  margin-bottom: 4rem;
   color: #fff;
   background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)' : 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
   cursor: pointer;

@@ -8,6 +8,7 @@ import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section, Screen, HeroSection, HeroImage, ScreenOverLay, ScreenImage, ScreenTitle, ScreenGradient, ScreenImage2 } from '../styles/GlobalComponents';
 import Header from '../components/Header/Header';
+import Button from '../styles/GlobalComponents/Button';
 
 const Home = () => {
   return (

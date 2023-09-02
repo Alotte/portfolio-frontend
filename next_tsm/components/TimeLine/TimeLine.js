@@ -1,8 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
-import { AccentSection, Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { AccentSection, ScreenImage, Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import Button from '../../styles/GlobalComponents/Button';
+import { SocialIcons } from '../Header/HeaderStyles';
+import { SocialIconsContainer } from '../Footer/FooterStyles';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { Hr } from '../Projects/ProjectsStyles';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -48,18 +53,38 @@ const Timeline = () => {
   }, []);
 
   return (
-  <AccentSection id="about"> 
+    <Section id="about"> 
+    <br/>
+    <br/>
+    <br/>
+    <ScreenImage/>
     <SectionDivider/>
     <SectionTitle>my story so far</SectionTitle>
     <SectionText>
-      When I started university I quickly found my calling as a leader, strategist and designer. 
+      When I started university I quickly found my strengths both with writing algorithms, designing experiences and leading my teams to shore. 
       
-      <br/><br/>I won my first programming competition one year later. My teams have won two, one for Spotify and one for Volvo GTT.
+      <br/><br/>My team won our first programming competition one year later.
       {/*<br/><br/>I graduated with high marks (4.5 / 5) despite being sick for my entire master studies. */}
-      <br/><br/>After graduating I worked as a consultant, creating an open-source python plugin for processing satellite images. It ended up with 5-stars and over 60000 downloads world-wide. 
-      <br/><br/> Then I took a break and worked on my health.
-      <br/><br/>Now I'm a web developer but also a business owner. Working on a new SaaS product within the e-health sector.
+      <br/><br/>After graduating I worked as a consultant, creating an open-source python plugin for processing satellite images. It ended up with 5-stars and over 70000 downloads world-wide. 
+      <br/><br/> Then I took a break to heal from sickness.
+      <br/><br/>Today I'm a business owner working from home within design and web development. I spend my days developing my own SaaS platform, while managing my digital goods webshop within the art industry. 
+      
+      <br/><br/>Now I'm looking for a workplace in IT to meet wonderful people and take my web developer skills to the next level.
     </SectionText>
+    <Button onClick={() => window.location = 'mailto:alma.ottedag@gmail.com'}>Connect</Button>
+      <SocialIconsContainer>
+     
+      <SocialIcons href="https://github.com/Alotte/">
+        <AiFillGithub size="3rem" />
+      </SocialIcons>
+
+      <SocialIcons href="https://www.linkedin.com/in/alma-ottedag-002171104/">
+        <AiFillLinkedin size="3rem" />
+      </SocialIcons>
+   
+
+      </SocialIconsContainer>
+      
     <CarouselContainer id="carousel" ref={carouselRef} onScroll= {handleScroll}>
       <>
       {TimeLineData.map((item,index) => (
@@ -126,8 +151,7 @@ const Timeline = () => {
           </CarouselButton>
           ))}
       </CarouselButtons>
-
-  </AccentSection>
+  </Section>
   );
 };
 

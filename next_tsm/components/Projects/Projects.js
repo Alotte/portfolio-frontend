@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { ScreenOverLay,Screen, Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
+import { FaGraduationCap } from 'react-icons/fa';
 
 const Projects = () => (
   <Section id="projects">
@@ -11,14 +12,17 @@ const Projects = () => (
     <GridContainer>
       {projects.map(({id,image, title, description, tags, source, visit}) => (
         <BlogCard key={id}>
-          <Img src={image}/>
+   
+            <ScreenOverLay/>
+            <Img src={image} />
+
           <TitleContent>
             <HeaderThree>{title}</HeaderThree>
             <Hr />
           </TitleContent>
           <CardInfo>{description}</CardInfo>
           <div>
-            <TitleContent>Stack</TitleContent>
+          <Hr />
             <TagList>
               {tags.map((tag,i) => (
                 <Tag key={i}>{tag}</Tag>
